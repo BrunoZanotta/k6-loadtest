@@ -42,6 +42,22 @@ winget install -e --id k6.k6
 k6 version 
 ```
 
+
+## Make (Apenas para Windows)
+- **Instale o Chocolatey: Abra o PowerShell como Administrador e execute o comando abaixo:** 
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+- **Instale o make: Após a instalação do Chocolatey, no mesmo terminal de Administrador, execute:** 
+```bash
+choco install make
+```
+
+Reinicie o terminal: Feche e abra o PowerShell novamente para que o comando make seja reconhecido pelo sistema.
+
+---
+
 Alternativa — Instalador oficial
 •	Baixe e instale o executável do k6 (Windows) a partir da página oficial. Depois, confirme com k6 version.
 
